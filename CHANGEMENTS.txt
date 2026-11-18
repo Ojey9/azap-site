@@ -1,0 +1,39 @@
+AZAP.COOL — VERSION OPTIMISÉE (18 novembre 2026)
+Même apparence. Ce dossier contient uniquement les fichiers modifiés ou ajoutés,
+aux mêmes emplacements que dans « AZAP SAVE ». Pour l'appliquer : copier son contenu
+par-dessus « AZAP SAVE » (en gardant une sauvegarde).
+
+CORRECTIONS
+- index.html : lien Vimeo d'Ocytocine réparé (https://vimeo.com/869070743, il était écrit deux fois).
+- index.html : « Voir là vidéo » -> « Voir la vidéo », « réalisée pour via » -> « réalisée via »,
+  « Digitalisatez » -> « Digitalisez », « mutli-caméra » -> « multi-caméra ».
+- index.html + bande-annonce : formulaire en français (Nom, Objet, Message au lieu de First Name, Subject).
+- index.html : texte alternatif du logo La Poste (il disait Peugeot) et d'une icône e-learning (il disait facebook).
+
+MENU ET PIED DE PAGE
+- Le menu et le pied de page sont maintenant écrits directement dans chaque page
+  (avant, ils étaient chargés en JavaScript après coup : Google les voyait mal et ils
+  n'apparaissaient pas si le script échouait). header.html et footer.html restent la référence.
+- Menu Services : ajout de « Vidéo e-learning » et « Corporate & interview » (il en manquait 2 sur 6).
+- Menu « Réalisations » pointe vers projets.html.
+- Pied de page : les liens Facebook, Google+ (fermé), Instagram et Dribbble pointaient vers « # ».
+  Remplacés par LinkedIn et Vimeo.
+
+VITESSE
+- Les 14 GIF animés de la grille et des pages sont remplacés par de courtes vidéos en boucle
+  (MP4 + WebM, muettes, lecture auto). Poids : environ 5,7 Mo de GIF -> environ 0,9 Mo.
+  Le GIF reste en secours pour les très vieux navigateurs.
+- Les animations Lottie (café, formats, perso, salt bae) chargeaient la bibliothèque depuis
+  skypack.dev, un service externe peu fiable. Elle est maintenant hébergée sur le site
+  (js/lottie_light.min.js), et les chemins pointent vers les fichiers .json.
+
+FICHIERS JS MODIFIÉS
+- js/portfolioData.js : affiche une vidéo légère quand l'image du projet est un GIF.
+  Ton fichier mydata.js n'est pas modifié : tu continues à y mettre tes .gif, la vidéo est utilisée si elle existe.
+- js/recurrent.js : n'utilise le chargement JS du menu que si la page ne l'a pas déjà.
+
+POINTS À VÉRIFIER (non modifiés)
+- .htaccess redirige zephyr-edf.html vers projet-zephyr-edf.html, mais cette page n'existe pas (erreur 404).
+- mail.php n'est pas dans le dossier : le formulaire ne marchera que s'il est bien sur l'hébergement.
+- LinkedIn : la page d'accueil pointe vers /in/jeremy-boutier/ et les données SEO vers /in/jeremyboutier/. Lequel est le bon ?
+- Pour un nouveau GIF ajouté plus tard : il faudra générer sa vidéo (je peux le faire).
