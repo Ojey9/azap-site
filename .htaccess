@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.azap.cool/$1 [R=301,L]
+
+ErrorDocument 404 /404.html
+
+RewriteRule ^portfolio\.html$ /projets.html [R=301,L]
+RewriteRule ^tesla-note\.html$ /projet-tesla-note.html [R=301,L]
+RewriteRule ^zephyr-edf\.html$ /projet-zephyr-edf.html [R=301,L]
+RewriteRule ^video-formation-elearning-natixis\.html$ /projet-elearning-natixis.html [R=301,L]
+
+<IfModule mod_headers.c>
+  <FilesMatch "^(30|interference|radio-scanner)\.html$">
+    Header set X-Robots-Tag "noindex, nofollow"
+  </FilesMatch>
+</IfModule>

@@ -1,0 +1,6 @@
+*.zip
+OLD 2025/
+show/
+_version-optimisee/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,17 @@
+VERSION DE TRAVAIL AZAP — SEPTEMBRE 2026
+
+Cette copie conserve le site HTML/CSS/JS d’origine et ajoute :
+
+- 6 études de cas détaillées ;
+- 5 nouvelles pages de services, en complément de la page Bande-annonce ;
+- un sommaire des services et un sommaire des projets ;
+- une navigation mise à jour ;
+- un sitemap.xml et un robots.txt ;
+- une page 404 personnalisée ;
+- des redirections pour plusieurs anciennes adresses ;
+- l’exclusion SEO du dossier show, conservé sans modification.
+
+Les anciennes versions index-old.html, index2.html et portfolio.html ne sont pas incluses dans le ZIP final. Elles restent disponibles dans le ZIP source d’origine.
+
+Avant mise en ligne, relire les textes et vérifier le formulaire de contact sur l’hébergement PHP actuel.
+
